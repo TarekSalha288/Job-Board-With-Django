@@ -1,0 +1,35 @@
+{%extends 'base.html'%} {% load bootstrap4 %} {%block body%}
+<div class="bradcam_area bradcam_bg_1">
+  <div class="container">
+
+  </div>
+</div>
+<!--/ bradcam_area  -->
+
+      <div class="col-lg-10 mx-auto">
+        <div class="job_sumary">
+          <div class="summery_header">
+            <h3>Profile</h3>
+          </div>
+          <div class="job_content">
+            <ul>
+              <li>
+                UserName:<span>{{p.user.username}}</span>
+              </li>
+              <li>Email: <span>{{p.user.email}}</span></li>
+              <li>City: <span>{{p.city}}</span></li>
+              <li>Phone_Number: <span>{{p.phone}}</span></li>
+            
+            </ul>
+          
+          </div>
+          <div class='p-5'>
+            <a href="{% url 'accounts:edit' %}" class="boxed-btn3 w-100">Edit Profile</a>
+          </div>
+        </div>
+   
+      </div>
+    </div>
+  </div>
+</div>
+{%endblock %}
